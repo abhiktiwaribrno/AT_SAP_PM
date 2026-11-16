@@ -14,7 +14,7 @@
       content="Technical project leadership across SAP S/4HANA, RISE migrations, zero-downtime cutovers, and governance for high-availability enterprise environments."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/abhiktiwaribrno/AT_SAP_PM/main/WhatsApp%20Image%202025-02-25%20at%2010.26.18%20(1).jpeg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -284,20 +284,14 @@
       .portrait {
         border-radius: 24px;
         min-height: 420px;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
         background: linear-gradient(135deg, rgba(15, 157, 154, 0.16), rgba(16, 35, 45, 0.08));
-        display: grid;
-        place-items: center;
+        display: block;
         border: 1px solid var(--line);
         position: relative;
         overflow: hidden;
-      }
-
-      .portrait::before {
-        content: "AT";
-        font-size: clamp(4rem, 9vw, 7rem);
-        font-weight: 800;
-        letter-spacing: -0.09em;
-        color: var(--accent-dark);
       }
 
       .mini-stats {
@@ -557,7 +551,11 @@
 
           <div class="profile-panel" aria-label="Profile overview">
             <div class="profile-card">
-              <div class="portrait" role="img" aria-label="Abhishek Tiwari profile placeholder"></div>
+              <img
+                class="portrait"
+                src="https://raw.githubusercontent.com/abhiktiwaribrno/AT_SAP_PM/main/WhatsApp%20Image%202025-02-25%20at%2010.26.18%20(1).jpeg"
+                alt="Portrait of Abhishek Tiwari"
+              />
               <div class="mini-stats" aria-label="Headline statistics">
                 <div class="mini-stat">
                   <strong>20+</strong>
