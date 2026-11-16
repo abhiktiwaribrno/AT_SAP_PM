@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abhishek Tiwari | SAP Technical Project Manager</title>
+    <meta
+      name="description"
+      content="SAP Technical Project Manager and former SAP Basis Lead with 18+ years of experience delivering complex ERP transformations, cloud migrations, and regulated technology programs."
+    />
+    <meta property="og:title" content="Abhishek Tiwari | SAP Technical Project Manager" />
+    <meta
+      property="og:description"
+      content="Technical project leadership across SAP S/4HANA, RISE migrations, zero-downtime cutovers, and governance for high-availability enterprise environments."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #f4f7f8;
+        --panel: #ffffff;
+        --panel-alt: #eef7f7;
+        --text: #10232d;
+        --muted: #5f6d76;
+        --line: rgba(16, 35, 45, 0.09);
+        --accent: #0f9d9a;
+        --accent-dark: #0a6f71;
+        --shadow: 0 18px 40px rgba(15, 25, 35, 0.08);
+        --radius: 22px;
+        --max-width: 1120px;
+      }
+
+      * { box-sizing: border-box; }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Inter", sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+      }
+
+      img {
+        max-width: 100%;
+        display: block;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .container {
+        width: min(var(--max-width), calc(100% - 2rem));
+        margin: 0 auto;
+      }
+
+      .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        backdrop-filter: blur(18px);
+        background: rgba(244, 247, 248, 0.82);
+        border-bottom: 1px solid var(--line);
+      }
+
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 74px;
+        gap: 1rem;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.75rem;
+        font-weight: 700;
+      }
+
+      .brand-mark {
+        width: 36px;
+        height: 36px;
+        border-radius: 12px;
+        display: grid;
+        place-items: center;
+        background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+        color: #fff;
+        font-size: 0.9rem;
+        box-shadow: var(--shadow);
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 1.3rem;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .nav-links a {
+        color: var(--muted);
+        font-size: 0.96rem;
+        font-weight: 500;
+        transition: color 0.2s ease;
+      }
+
+      .nav-links a:hover,
+      .nav-links a:focus-visible {
+        color: var(--text);
+      }
+
+      .menu-toggle {
+        display: none;
+        border: 1px solid var(--line);
+        background: #fff;
+        border-radius: 12px;
+        width: 42px;
+        height: 42px;
+        padding: 0;
+        cursor: pointer;
+      }
+
+      .menu-toggle span,
+      .menu-toggle::before,
+      .menu-toggle::after {
+        content: "";
+        display: block;
+        width: 16px;
+        height: 2px;
+        margin: 0 auto;
+        background: var(--text);
+        border-radius: 2px;
+      }
+
+      .menu-toggle span {
+        margin: 4px auto;
+      }
+
+      main {
+        padding: 2.5rem 0 4rem;
+      }
+
+      section {
+        padding: 2.25rem 0;
+      }
+
+      .hero {
+        padding-top: 3rem;
+      }
+
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 1.3fr 0.7fr;
+        align-items: center;
+        gap: 2rem;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.45rem 0.75rem;
+        border-radius: 9999px;
+        background: rgba(15, 157, 154, 0.12);
+        color: var(--accent-dark);
+        font-weight: 600;
+        font-size: 0.82rem;
+        letter-spacing: 0.02em;
+      }
+
+      .eyebrow::before {
+        content: "";
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--accent);
+      }
+
+      h1 {
+        font-size: clamp(2.4rem, 5vw, 4.5rem);
+        line-height: 1.02;
+        margin: 1rem 0 1rem;
+        letter-spacing: -0.06em;
+      }
+
+      .hero h1 .name {
+        display: block;
+      }
+
+      .title {
+        color: var(--muted);
+        font-size: clamp(1.1rem, 2.2vw, 1.8rem);
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+
+      .summary {
+        max-width: 62ch;
+        color: var(--muted);
+        font-size: 1.05rem;
+        margin-bottom: 1.4rem;
+      }
+
+      .chip-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.6rem;
+        margin: 1.2rem 0 1.6rem;
+      }
+
+      .chip {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.55rem 0.8rem;
+        border-radius: 9999px;
+        background: var(--panel);
+        border: 1px solid var(--line);
+        color: var(--text);
+        font-size: 0.82rem;
+        font-weight: 600;
+      }
+
+      .cta-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.9rem;
+        margin-top: 1rem;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 46px;
+        border-radius: 14px;
+        padding: 0.7rem 1.2rem;
+        font-weight: 600;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .button:hover,
+      .button:focus-visible {
+        transform: translateY(-1px);
+      }
+
+      .button.primary {
+        background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+        color: #fff;
+        box-shadow: 0 14px 28px rgba(15, 157, 154, 0.24);
+      }
+
+      .button.secondary {
+        background: #fff;
+        border: 1px solid var(--line);
+        color: var(--text);
+      }
+
+      .profile-panel {
+        position: relative;
+      }
+
+      .profile-card {
+        background: linear-gradient(180deg, #ffffff 0%, #f0f9f8 100%);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        padding: 1.2rem;
+      }
+
+      .portrait {
+        border-radius: 24px;
+        min-height: 420px;
+        background: linear-gradient(135deg, rgba(15, 157, 154, 0.16), rgba(16, 35, 45, 0.08));
+        display: grid;
+        place-items: center;
+        border: 1px solid var(--line);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .portrait::before {
+        content: "AT";
+        font-size: clamp(4rem, 9vw, 7rem);
+        font-weight: 800;
+        letter-spacing: -0.09em;
+        color: var(--accent-dark);
+      }
+
+      .mini-stats {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 0.9rem;
+        margin-top: 1rem;
+      }
+
+      .mini-stat {
+        background: rgba(255,255,255,0.75);
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 0.9rem 0.7rem;
+        text-align: center;
+      }
+
+      .mini-stat strong {
+        display: block;
+        font-size: 1.5rem;
+        line-height: 1.2;
+      }
+
+      .mini-stat span {
+        display: block;
+        color: var(--muted);
+        font-size: 0.78rem;
+        margin-top: 0.2rem;
+      }
+
+      .section-heading {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .section-heading .index {
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--accent-dark);
+      }
+
+      .section-heading h2 {
+        margin: 0;
+        font-size: clamp(1.8rem, 3vw, 2.6rem);
+        letter-spacing: -0.05em;
+      }
+
+      .profile-card-summary {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        padding: 1.5rem;
+      }
+
+      .profile-card-summary h3 {
+        margin: 0 0 0.8rem;
+        font-size: 1.5rem;
+      }
+
+      .gh-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        gap: 0.8rem;
+      }
+
+      .gh-list li {
+        display: flex;
+        gap: 0.8rem;
+        align-items: flex-start;
+        color: var(--muted);
+      }
+
+      .check {
+        width: 22px;
+        height: 22px;
+        min-width: 22px;
+        border-radius: 50%;
+        background: rgba(15, 157, 154, 0.12);
+        display: inline-grid;
+        place-items: center;
+        color: var(--accent-dark);
+        font-weight: 800;
+        font-size: 0.75rem;
+      }
+
+      .expertise-grid,
+      .work-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.2rem;
+      }
+
+      .card {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        padding: 1.35rem;
+      }
+
+      .card h3 {
+        margin: 0 0 0.6rem;
+        font-size: 1.2rem;
+      }
+
+      .card p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .card ul {
+        margin: 0.8rem 0 0 1.1rem;
+        padding: 0;
+        color: var(--muted);
+      }
+
+      .card li + li {
+        margin-top: 0.6rem;
+      }
+
+      .contact-box {
+        background: linear-gradient(135deg, rgba(15, 157, 154, 0.08), rgba(16, 35, 45, 0.02));
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        padding: 1.5rem;
+      }
+
+      .contact-box h3 {
+        margin-top: 0;
+        margin-bottom: 0.8rem;
+        font-size: 1.8rem;
+        letter-spacing: -0.04em;
+      }
+
+      .contact-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.8rem;
+        margin-top: 1rem;
+      }
+
+      .footer {
+        padding: 1.75rem 0 2.5rem;
+        color: var(--muted);
+        border-top: 1px solid var(--line);
+      }
+
+      .footer-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+
+      @media (max-width: 860px) {
+        .hero-grid,
+        .expertise-grid,
+        .work-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .nav-links {
+          position: absolute;
+          top: 74px;
+          left: 1rem;
+          right: 1rem;
+          display: none;
+          background: rgba(255,255,255,0.98);
+          border: 1px solid var(--line);
+          border-radius: 16px;
+          padding: 1rem;
+          box-shadow: var(--shadow);
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .nav-links.open {
+          display: flex;
+        }
+
+        .menu-toggle {
+          display: inline-block;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+
+        *, *::before, *::after {
+          animation: none !important;
+          transition: none !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a href="#top" class="brand" aria-label="Abhishek Tiwari home">
+          <span class="brand-mark">AT</span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+        </button>
+
+        <nav aria-label="Main navigation">
+          <ul class="nav-links" id="primaryNav">
+            <li><a href="#about">About</a></li>
+            <li><a href="#expertise">Expertise</a></li>
+            <li><a href="#working-style">Working Style</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <div class="eyebrow">Open to Senior Leadership roles</div>
+            <h1>
+              <span class="name">Abhishek Tiwari</span>
+            </h1>
+            <div class="title">SAP Technical Project Manager at MSD</div>
+            <p class="summary">
+              I am a Technical Project Manager and former SAP Basis Lead with 18+ years of experience delivering complex ERP transformations across pharmaceutical, manufacturing, publishing, and technology enterprises. I bridge the gap between deep technical engineering and executive governance, specializing in regulated, high-availability environments requiring CSV, SOX compliance, and zero-downtime upgrades.
+            </p>
+
+            <div class="chip-row" aria-label="Skills">
+              <span class="chip">SAP S/4HANA</span>
+              <span class="chip">RISE with SAP</span>
+              <span class="chip">Cloud Migrations</span>
+              <span class="chip">Cutovers</span>
+              <span class="chip">Governance</span>
+              <span class="chip">CSV &amp; SOX</span>
+            </div>
+
+            <div class="cta-row">
+              <a class="button primary" href="#expertise">View My Work</a>
+              <a class="button secondary" href="https://www.linkedin.com/in/abhishek-tiwari-63607017/" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a class="button secondary" href="https://github.com/abhiktiwaribrno" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </div>
+
+          <div class="profile-panel" aria-label="Profile overview">
+            <div class="profile-card">
+              <div class="portrait" role="img" aria-label="Abhishek Tiwari profile placeholder"></div>
+              <div class="mini-stats" aria-label="Headline statistics">
+                <div class="mini-stat">
+                  <strong>20+</strong>
+                  <span>Years</span>
+                </div>
+                <div class="mini-stat">
+                  <strong>18+</strong>
+                  <span>ERP delivery</span>
+                </div>
+                <div class="mini-stat">
+                  <strong>Global</strong>
+                  <span>Programs</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container">
+          <div class="section-heading">
+            <span class="index">01</span>
+            <h2>About</h2>
+          </div>
+
+          <div class="profile-card-summary">
+            <h3>Translating complex SAP landscapes into resilient cloud operations</h3>
+            <p class="summary" style="margin-bottom: 0; max-width: none;">
+              I am a Technical Project Manager and former SAP Basis Lead with 18+ years of end-to-end enterprise delivery experience across pharmaceutical, manufacturing, publishing, and technology organizations. Over the past eight years, I have directed global SAP S/4HANA implementations, RISE with SAP cloud migrations, and multi-country rollouts spanning Europe, North America, and Asia.
+            </p>
+            <ul class="gh-list" style="margin-top: 1.2rem;">
+              <li><span class="check">✓</span><span>Hands-on expertise in SAP HANA, Linux/AIX, Oracle/DB2, Solution Manager, and Azure/AWS.</span></li>
+              <li><span class="check">✓</span><span>Focused on mission-critical, highly regulated environments that demand CSV, SOX readiness, and zero-downtime execution.</span></li>
+              <li><span class="check">✓</span><span>Brings clear technical credibility to architecture validation, cutover planning, risk controls, and executive decision-making.</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="expertise">
+        <div class="container">
+          <div class="section-heading">
+            <span class="index">02</span>
+            <h2>Expertise</h2>
+          </div>
+
+          <div class="expertise-grid">
+            <article class="card">
+              <h3>SAP S/4HANA &amp; RISE with SAP</h3>
+              <p>Leading full-lifecycle ERP implementations and cloud migrations onto hyperscaler infrastructures with a focus on scalability, disaster recovery, and security compliance.</p>
+              <ul>
+                <li>Cloud roadmap alignment</li>
+                <li>OS/DB and hyperscaler migrations</li>
+                <li>Performance and hypercare validation</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3>Zero-Disruption Cutover &amp; Upgrade Engineering</h3>
+              <p>Orchestrating high-stakes technical cutovers and complex upgrades across global multi-tier landscapes while safeguarding business continuity.</p>
+              <ul>
+                <li>Cutover playbook execution</li>
+                <li>Zero Downtime Option (ZDO)</li>
+                <li>Fallback and data integrity management</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3>Enterprise PMO Governance &amp; Risk Control</h3>
+              <p>Steering complex multi-country programs on time and within budget by combining SAP Activate, PRINCE2®, Agile, and Waterfall frameworks.</p>
+              <ul>
+                <li>Steering committee leadership</li>
+                <li>Proactive risk and scope management</li>
+                <li>Cross-platform and vendor alignment</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3>Regulatory Compliance &amp; SAP Basis Operations</h3>
+              <p>Ensuring audit-ready change controls and high-availability infrastructure operations in strict pharmaceutical and enterprise environments.</p>
+              <ul>
+                <li>CSV and SOX compliance</li>
+                <li>Landscape monitoring and optimization</li>
+                <li>Global service transitions</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="working-style">
+        <div class="container">
+          <div class="section-heading">
+            <span class="index">03</span>
+            <h2>Working Style</h2>
+          </div>
+
+          <div class="work-grid">
+            <article class="card">
+              <h3>Toll-Gate Governance</h3>
+              <p>Running disciplined Preparation, Realisation, Testing, and Cutover gates with transparent Go/No-Go readiness criteria.</p>
+            </article>
+            <article class="card">
+              <h3>Technical Credibility</h3>
+              <p>Challenging vendor estimates and validating architecture directly with Basis, database, and cloud engineering teams.</p>
+            </article>
+            <article class="card">
+              <h3>Executive Clarity</h3>
+              <p>Translating complex landscape dependencies into concise PMO dashboards, RAID logs, and steering committee briefs.</p>
+            </article>
+            <article class="card">
+              <h3>Audit-Ready Documentation</h3>
+              <p>Embedding CSV/SOX change controls, rollback playbooks, and Known Error Databases into everyday delivery to lower long-term TCO.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <div class="contact-box">
+            <div class="section-heading" style="margin-bottom: 0.75rem;">
+              <span class="index">04</span>
+              <h2>Let’s connect</h2>
+            </div>
+            <h3>Open to Senior Leadership opportunities</h3>
+            <p style="margin: 0; color: var(--muted); max-width: 60ch;">
+              Based in Brno, Czech Republic, I work across global enterprise transformation programs and can support strategic SAP technology leadership, complex migrations, and risk-managed delivery.
+            </p>
+
+            <div class="contact-row">
+              <a class="button primary" href="https://www.linkedin.com/in/abhishek-tiwari-63607017/" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a class="button secondary" href="https://github.com/abhiktiwaribrno" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <span>© 2026 Abhishek Tiwari</span>
+        <span>SAP Technical Project Manager • Brno, Czech Republic</span>
+      </div>
+    </footer>
+
+    <script>
+      const toggle = document.querySelector('.menu-toggle');
+      const nav = document.getElementById('primaryNav');
+
+      if (toggle && nav) {
+        toggle.addEventListener('click', () => {
+          const isOpen = nav.classList.toggle('open');
+          toggle.setAttribute('aria-expanded', String(isOpen));
+        });
+
+        nav.querySelectorAll('a').forEach((link) => {
+          link.addEventListener('click', () => {
+            nav.classList.remove('open');
+            toggle.setAttribute('aria-expanded', 'false');
+          });
+        });
+      }
+    </script>
+  </body>
+</html>
